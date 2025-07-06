@@ -111,10 +111,10 @@ fn main() {
 }
 `,
 
-  swift: `
-import Foundation
+swift: `
 print("Hello, Alex!")
-`,
+`
+,
 
   kotlin: `
 fun main() {
@@ -132,13 +132,6 @@ my $name = "Alex";
 print "Hello, $name!\\n";
 `,
 
-  scala: `
-object HelloWorld {
-  def main(args: Array[String]) = {
-    println("Hello, Alex!")
-  }
-}
-`,
 
   dart: `
 void main() {
