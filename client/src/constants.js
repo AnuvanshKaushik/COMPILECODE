@@ -15,7 +15,6 @@ export const LANGUAGE_VERSIONS = {
   kotlin: "1.8.10",
   r: "4.2.2",
   perl: "5.34.0",
-  scala: "2.13.10",
   dart: "2.19.6",
   bash: "5.1.16",
   lua: "5.4.4",
