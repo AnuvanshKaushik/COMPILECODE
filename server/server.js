@@ -11,7 +11,7 @@ const codeRoutes = require("./routes/CodeRoutes");
 app.use("/api", codeRoutes);
 
 mongoose
-  .connect(mongodb+srv://champanand54:4qzLdUYnCo2kcRFb@cluster0.mutnf6b.mongodb.net/myCompilerDB?retryWrites=true&w=majority&appName=Cluster0)
+  .connect("mongodb+srv://champanand54:4qzLdUYnCo2kcRFb@cluster0.mutnf6b.mongodb.net/myCompilerDB?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log("MongoDB connected");
     app.listen(5000, () =>
