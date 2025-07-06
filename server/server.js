@@ -11,11 +11,11 @@ const codeRoutes = require("./routes/CodeRoutes");
 app.use("/api", codeRoutes);
 
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(mongodb+srv://champanand54:4qzLdUYnCo2kcRFb@cluster0.mutnf6b.mongodb.net/myCompilerDB?retryWrites=true&w=majority&appName=Cluster0)
   .then(() => {
     console.log("MongoDB connected");
-    app.listen(process.env.PORT, () =>
-      console.log(`Server running on port ${process.env.PORT}`)
+    app.listen(5000, () =>
+      console.log(`Server running on port ${5000}`)
     );
   })
   .catch((err) => console.error("MongoDB error:", err));
