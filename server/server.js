@@ -7,15 +7,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Routes
 const codeRoutes = require("./routes/CodeRoutes");
 app.use("/api", codeRoutes);
 
+// MongoDB Connection
 mongoose
   .connect("mongodb+srv://champanand54:4qzLdUYnCo2kcRFb@cluster0.mutnf6b.mongodb.net/myCompilerDB?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
-    console.log("MongoDB connected");
-    app.listen(5000, () =>
-      console.log(`Server running on port ${5000}`)
-    );
+    console.log("✅ MongoDB connected");
+    app.listen(5000, () => console.log("🚀 Server running on port 5000"));
   })
-  .catch((err) => console.error("MongoDB error:", err));
+  .catch((err) => console.error("❌ MongoDB error:", err.message));
